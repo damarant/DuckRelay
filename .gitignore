@@ -1,0 +1,56 @@
+﻿# ESP-IDF
+build/
+sdkconfig
+sdkconfig.old
+sdkconfig.ci
+sdkconfig.*.old
+
+# Component Manager
+managed_components/
+dependencies.lock.bak
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.cproject
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Output compilazione / binari
+*.bin
+*.elf
+*.map
+*.o
+*.obj
+*.a
+*.out
+*.d
+
+# agent.exe escluso dal repo (va in una Release GitHub)
+*.exe
+
+# Test / artefatti locali
+*.duck
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+# Backup / temporanei
+*.bak
+*.tmp
+*.orig
+*.rej
