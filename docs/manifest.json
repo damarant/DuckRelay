@@ -1,0 +1,13 @@
+{
+  "name": "DuckRelay",
+  "version": "1.01",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S2",
+      "parts": [
+        { "path": "duckrelay_merged.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
