@@ -4,7 +4,7 @@
   "new_install_prompt_erase": true,
   "builds": [
     {
-      "chipFamily": "ESP32-S2",
+      "chipFamily": "ESP32-S2-mini-wemos",
       "parts": [
         {
           "path": "https://github.com/damarant/DuckRelay/releases/download/v1.01/duckrelay_merged.bin",
