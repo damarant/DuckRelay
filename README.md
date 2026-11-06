@@ -133,6 +133,24 @@ idf.py -p COM3 -b 115200 flash
 
 On the first `build`, `idf.py` automatically downloads the `espressif/esp_tinyusb` component via the Component Manager.
 
+#### Option B — Flash a prebuilt merged binary (no ESP-IDF required)
+
+If you don't want to install ESP-IDF, you can flash the prebuilt merged binary **`duckrelay_merged.bin`** (bootloader + partition table + application, already positioned at the correct offsets).
+
+**Option B1 — Adafruit WebSerial ESPTool (Chrome/Edge, no install)**
+
+1. Open [Adafruit WebSerial ESPTool](https://adafruit.github.io/Adafruit_WebSerial_ESPTool/).
+2. Connect, click **Erase** (recommended), select `duckrelay_merged.bin`, set the offset to **`0x0`**, and click **Program**.
+
+**Option B2 — esptool from the command line**
+
+```bash
+esptool --chip esp32s2 -p COM3 write_flash 0x0 duckrelay_merged.bin
+```
+Replace COM3 with the correct port. The offset is 0x0 because the binary is already merged.
+
+The merged binary is attached to the GitHub Releases page.
+
 ### 3. Build the Windows agent
 
 The agent can be built with **MinGW-w64**. There are two configurations:
