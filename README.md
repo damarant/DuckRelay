@@ -128,7 +128,7 @@ cd duckrelay
 ```bash
 idf.py set-target esp32s2
 idf.py build
-idf.py flash monitor
+idf.py -p COM3 -b 115200 flash
 ```
 
 On the first `build`, `idf.py` automatically downloads the `espressif/esp_tinyusb` component via the Component Manager.

@@ -6,7 +6,10 @@
     {
       "chipFamily": "ESP32-S2",
       "parts": [
-        { "path": "duckrelay_merged.bin", "offset": 0 }
+        {
+          "path": "https://github.com/damarant/duckrelay/releases/download/v1.01/duckrelay_merged.bin",
+          "offset": 0
+        }
       ]
     }
   ]
